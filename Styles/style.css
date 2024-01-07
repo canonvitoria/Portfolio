@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --cor-primaria: #2e2e2e;
+  --cor-secundaria: #f2f2f2;
+  --cor-terciaria: #A67B56;
+
+  --font-principal: 'Montserrat', sans-serif; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+  padding: 2% 0% 0% 15%;
+}
+
+.navegacao {
+  display: flex;
+  gap: 80px;
+}
+
+.navegacao a {
+  font-family: var(--font-principal);
+  font-size: 1.12rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9.2% 16%;
+    gap: 82px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-principal);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+    text-decoration: underline;
+}
+
+.conteudo-texto {
+    font-size: 1.5rem;
+    font-family:var(--font-principal);
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.conteudo-texto-about{
+    font-size: 1.37rem;
+    font-family: var(--font-principal);
+    margin-top: 13px;
+    text-align: justify;
+}
+
+.conteudo-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.titulo-redes {
+    font-size: 1.18rem;
+    font-family: var(--font-principal); 
+}
+
+.icon-coffee{
+  margin-right: 10px;
+}
+
+/* Redes Sociais */
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family:var(--font-principal);
+  font-weight: 700;
+  font-size: 1.25rem;  
+  color: var(--cor-secundaria);
+  
+  background-color: var(--cor-terciaria);
+  box-shadow: black 2px 2px 22px;
+  border-radius: 15px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: black 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: #735438;
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, white 3px, white, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, white 3px, white 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, white 5px, white 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+.img-perfil {
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.502);
+    
+}
+
+footer {
+  font-family:var(--font-principal);
+  background-color: #735438;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  .conteudo {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .container{
+    width: auto;
+  }
+
+  .cabecalho { 
+   padding: 10%;
+  }
+
+  .navegacao{
+    justify-content: center;
+  }
+
+  .button{
+    margin-left: 10px;
+  }
+
+}
