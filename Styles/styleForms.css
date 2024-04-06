@@ -21,6 +21,7 @@ html {
 
 body {
     width: 100vw;
+    background-color: #2e2e2e;
 }
 
 #div1 {
@@ -31,6 +32,7 @@ body {
     z-index: 1;
     margin-left: 5em;
     border-radius: 30px;
+    border: 2px solid #a67b56
 }
 
 #div2 {
@@ -56,7 +58,8 @@ body {
 }
 
 #dois {
-    background-color: white;
+    background-color: #2e2e2e;
+    ;
     height: 2em;
     width: 7em;
     border-radius: 20px;
@@ -84,7 +87,7 @@ body {
 }
 
 #cinco {
-    background-color: white;
+    background-color:#2e2e2e;
     height: 2em;
     width: 7em;
     border-radius: 20px;
@@ -180,6 +183,9 @@ body {
     margin-left: 260px;
 }
 
+.formulario-titulo {
+    display: none;
+}
 /* Input Design */
 
 .container-botao-voltar{
@@ -346,3 +352,127 @@ input, textarea:focus {
     text-align: center;
     margin-top: 50px;
 }
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #div2 {
+        width: 100vw;
+        height: 160px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #div1 {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    #um, #dois, #tres, #quatro, #cinco, #seis, #sete, #oito {
+        display: none;
+    }
+
+    .ImagemPerfil {
+        width: 100px;
+        margin: 20px 0 0 20px;
+    }
+    .icon-github {
+        margin: 10px 0 0 190px;
+        width: 34px;
+    }
+    .icon-linkedin {
+        margin: 10px 0 0 250px;
+        width: 34px;
+    }
+    .titulo-nome {
+     margin: 55px 0 0 165px;
+     font-size: 15px;
+    }
+    .paragrafo {
+        margin: 80px 0 0 120px;
+        width: 250px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .paragrafo.segundo{
+        margin: 110px 0 0 120px;
+        width: 250px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .icon-local, .paragrafo.localizacao, .icon-email, .paragrafo.email {
+        display: none;
+    }
+    .container-botao-voltar, .botao-voltar {
+        display: none;
+    }
+    .identidade {
+        margin: 250px 0 0 40px;
+    }
+   
+    #i-sobrenome {
+        margin: 30px 0 30px 0;
+    }
+
+    #i-email {
+        margin: 0 0 30px 40px;
+        width: 300px;
+    }
+
+    #i-telefone {
+        margin: 0 0 30px 40px;
+        width: 300px;
+    }
+
+    #i-assunto {
+        margin: 0 0 30px 40px;
+        width: 300px;
+    }
+
+    #i-mensagem {
+        margin: 0 0 30px 40px;
+        width: 300px;
+    }
+
+    .botao-submit {
+        margin: 0 0 0 90px;
+    }
+
+    .formulario-titulo {
+        display: block;
+        margin: -60px 70px 10px 0 ;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.3em;
+        font-family: var(--font-principal);
+        color: white;
+    }
+
+    .icon-coffee {
+        position: relative;
+        top: 25%;
+        left: 38%;
+        bottom: 30% !important;
+        height: 10vw;
+        max-height: 100px;
+        z-index: 1; 
+        color: white;
+    }
+}
+
