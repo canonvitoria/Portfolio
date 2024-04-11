@@ -214,3 +214,70 @@ p a {
     justify-content: center;
     align-items: center;
 }
+
+.xicaraCafe {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    html {
+        width: 100vw;
+        height: 100vh;
+    }
+    h1{
+        width: 100vw;
+        margin: 100px 0 0 10px;
+    }
+
+    p {
+        margin: 10px 10px 0 10px;
+        width: 94vw;
+        text-align: justify;
+    }
+
+    .xicaraCafe{
+        display: block;
+        width: 70vw;
+        margin: 20px 0 0 60px;
+    }
+
+    .container {
+        display: none;
+    }
+    @media screen and (max-width: 1024px) {
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+    
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+        h1{
+            width: 90vw;
+            margin: 100px 0 0 10px;
+        }
+    
+        p {
+            margin: 10px 10px 0 10px;
+            width: 94vw;
+            text-align: justify;
+        }
+    
+        .xicaraCafe{
+            display: block;
+            width: 70vw;
+            margin: 80px 0 0 120px;
+        }
+    
+        .container {
+            display: none;
+        }
+    }
+}
