@@ -40,6 +40,24 @@ body {
   color: var(--cor-secundaria);
 }
 
+.formularioRegistro {
+  position: absolute;
+  top: 20;
+  right: 100px;
+  background-color: var(--cor-terciaria);
+  padding: 10px;
+  border-radius: 50%;
+  transform: scale(1.03);
+  transition: all .4s ease-in-out;
+}
+
+.formularioRegistro:hover  {
+  transform: scale(1.03);
+  transition: all .4s ease-in-out;
+  background-color: #735438;
+  cursor: pointer;
+}
+
 /* Configurações do carrosel  */
 
 .container {
