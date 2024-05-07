@@ -41,8 +41,8 @@ body {
 }
 
 .formularioRegistro {
+  margin-top: -20px;
   position: absolute;
-  top: 20;
   right: 100px;
   background-color: var(--cor-terciaria);
   padding: 10px;
@@ -56,6 +56,14 @@ body {
   transition: all .4s ease-in-out;
   background-color: #735438;
   cursor: pointer;
+}
+
+.tituloFormulario {
+  font-family: var(--font-principal);
+  display: flex;
+  position: absolute;
+  top: 57px;
+ right: 170px;
 }
 
 /* Configurações do carrosel  */
