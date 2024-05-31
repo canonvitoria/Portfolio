@@ -236,7 +236,7 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .conteudo {
     flex-direction: column-reverse;
   }
@@ -269,7 +269,7 @@ footer {
 
   .tituloFormulario {
     margin: 1230px 0 0 10px ;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .formularioRegistro {
