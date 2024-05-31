@@ -239,11 +239,11 @@ footer {
 @media (max-width: 1200px) {
   .conteudo {
     flex-direction: column-reverse;
-    padding: 5%;
   }
 
   .container{
-    width: auto;
+    width: 90vw;
+    display: block;
   }
 
   .cabecalho { 
@@ -254,7 +254,25 @@ footer {
     justify-content: center;
   }
 
-  .button{
-    margin-left: 10px;
+  .img-perfil {
+    width: 250px;
+  }
+
+  .titulo-redes {
+    margin-top: 40px;
+  }
+
+  button {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .tituloFormulario {
+    margin: 1230px 0 0 10px ;
+    padding-bottom: 20px;
+  }
+
+  .formularioRegistro {
+    margin: 1200px -70px 0 10px;
   }
 }
