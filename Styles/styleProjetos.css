@@ -227,3 +227,51 @@ body {
 .buttons button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  body {
+    background-image: none;
+    background-color: var(--cor-primaria);
+  }
+  .cabecalho {
+    padding: 0;
+    display: flex;
+  }
+
+  .navegacao {
+    margin: 2.5em auto;
+    padding: 0; 
+    gap: 60px;
+  }
+  
+  .tituloFormulario {
+    margin: 700px 0 0 10px ;
+    padding-bottom: 30px;
+  }
+
+  .formularioRegistro {
+    margin: 750px -70px 0 10px;
+  }
+
+  .container {
+    width: 95vw;
+  }
+
+  .name {
+    margin: 1.5em 6em 0 -2em;
+    padding: 0;
+    width: 100px;
+  }
+
+  .des {
+    display: none;
+  }
+
+  .buttons {
+    padding-right: 2em;
+  }
+
+  .item button {
+    margin: 5em 0 0 -5em;
+  }
+}
