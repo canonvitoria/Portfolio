@@ -275,4 +275,8 @@ footer {
   .formularioRegistro {
     margin: 1200px -70px 0 10px;
   }
+
+  .right::after, button::after {
+    display: none;
+  }
 }
