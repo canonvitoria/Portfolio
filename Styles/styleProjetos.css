@@ -228,7 +228,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   body {
     background-image: none;
     background-color: var(--cor-primaria);
@@ -245,12 +245,12 @@ body {
   }
   
   .tituloFormulario {
-    margin: 700px 0 0 10px ;
+    margin: 650px 0 0 10px ;
     padding-bottom: 30px;
   }
 
   .formularioRegistro {
-    margin: 750px -70px 0 10px;
+    margin: 710px -70px 0 10px;
   }
 
   .container {
