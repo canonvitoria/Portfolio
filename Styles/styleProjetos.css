@@ -255,6 +255,7 @@ body {
 
   .container {
     width: 95vw;
+    margin-top: -2em;
   }
 
   .name {
@@ -270,6 +271,7 @@ body {
   .buttons {
     padding-right: 2em;
   }
+
 
   .item button {
     margin: 5em 0 0 -5em;
