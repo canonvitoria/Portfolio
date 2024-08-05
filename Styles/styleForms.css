@@ -4,7 +4,6 @@
     --cor-primaria: #2e2e2e;
     --cor-secundaria: #f2f2f2;
     --cor-terciaria: #A67B56;
-  
     --font-principal: 'Montserrat', sans-serif; 
   }
   
@@ -14,15 +13,6 @@
     padding: 0;
 }
 
-html {
-    width: 100vw;
-    height: 100vh;
-}
-
-body {
-    width: 100vw;
-    background-color: #2e2e2e;
-}
 
 #div1 {
     position: absolute;
@@ -30,7 +20,6 @@ body {
     width: 90em;
     height: 52em;
     z-index: 1;
-    margin-left: 5em;
     border-radius: 30px;
     border: 2px solid #a67b56
 }
@@ -47,68 +36,6 @@ body {
     position: relative;
 }
 
-#um {
-    background-color: #A67B56;
-    height: 2em;
-    width: 7em;
-    border-radius: 40px;
-    margin-left: 25em;
-    margin-top: 5em;
-    position: absolute;
-}
-
-#dois {
-    background-color: #2e2e2e;
-    ;
-    height: 2em;
-    width: 7em;
-    border-radius: 20px;
-    margin-left: 28em;
-    margin-top: 3em;
-    position: absolute;
-}
-
-#tres{
-    background-color: #A67B56;
-    height: 2em;
-    width: 12em;
-    border-radius: 40px;
-    margin-left: 23em;
-    margin-top: 1em;
-}
-
-#quatro {
-    background-color: #a67b56;
-    height: 2em;
-    width: 10em;
-    border-radius: 40px;
-    margin-left: 25em;
-    margin-top: 38em;
-}
-
-#cinco {
-    background-color:#2e2e2e;
-    height: 2em;
-    width: 7em;
-    border-radius: 20px;
-    margin-left: 28em;
-}
-
-#seis {
-    background-color: #a67b56;
-    height: 2em;
-    width: 10em;
-    border-radius: 40px;
-    margin-left: 23em;
-}
-
-#sete {
-    background-color: #A67B56;
-    height: 2em;
-    width: 9em;
-    border-radius: 14px;
-    margin-top: 2em;
-}
 
 /* Conteúdo do formulário */
 
