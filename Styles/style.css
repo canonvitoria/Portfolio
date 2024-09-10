@@ -493,7 +493,6 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 40em;
-    padding-bottom: 10em;
   }
 
   .knowledge-grid {
@@ -523,3 +522,87 @@ footer {
   .container__titulo-image {
     width: 80px;
   }
+
+/* Seção de certificação */
+
+.container_certificado {
+  padding-bottom: 10em;
+}
+
+.direction {
+  text-align: center;
+}
+
+.direction button {
+  font-family: var(--font-principal);
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--cor-secundaria);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 0 10px;
+  margin-top: 0em;
+}
+
+.direction button:hover {
+  background-color: #aaa9a9;
+  cursor: pointer;
+}
+
+#prevCert > img, #nextCert > img {
+  width: 10px;
+  margin-top: 3px;
+}
+
+.item_certificate {
+  border-radius: 15px;
+  width: 400px;
+  height: 300px;
+  transition: .5s;
+  scroll-snap-align: start;
+}
+
+.item_certificate .certificado_HTML {
+  display: block;
+  margin: 50px auto 10px;
+  width: 420px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px #3a3a39;
+}
+
+#list {
+  display: flex;
+  width: max-content;
+  gap: 3em;
+}
+
+#formList {
+  max-width: 100%;
+  overflow: auto;
+  margin: 100px auto;
+  scroll-behavior: smooth;
+}
+
+#formList::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .item {
+    width: calc(33.3vw - 20px);
+  }
+  .direction {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(50vw - 20px);
+  }
+}

@@ -17,8 +17,8 @@
 #div1 {
     position: absolute;
     background-color: #2e2e2e;
-    width: 90em;
-    height: 52em;
+    width: 85em;
+    height: 50em;
     z-index: 1;
     border-radius: 30px;
     border: 2px solid #a67b56
@@ -27,13 +27,17 @@
 #div2 {
     background-color: #a67b56;
     width: 30em;
-    height: 52em;
+    height: 49em;
     top: 40px;
     left: 70em;
     z-index: 2;
-    margin-left: 220px;
+    margin-left: 190px;
     border-radius: 30px;
     position: relative;
+}
+
+.conteudo-container {
+    padding: 3em 0 0 2em ;
 }
 
 
