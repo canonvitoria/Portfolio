@@ -8,7 +8,9 @@ document.getElementById('prev').onclick = function(){
     document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
-  document.getElementById('nextCert').onclick = function(){
+// SLIDE HTML
+
+document.getElementById('nextCert').onclick = function(){
     let lists = document.querySelectorAll('.item_certificate');
     document.getElementById('list').appendChild(lists[0]);
 }
@@ -16,4 +18,16 @@ document.getElementById('prev').onclick = function(){
 document.getElementById('prevCert').onclick = function(){
     let lists = document.querySelectorAll('.item_certificate');
     document.getElementById('list').prepend(lists[lists.length - 1]);
+}
+
+// SLIDE METODOLOGIAS
+
+document.getElementById('nextCertMet').onclick = function(){
+    let lists = document.querySelectorAll('.item_certificateMet');
+    document.getElementById('listMet').appendChild(lists[0]);
+}
+
+document.getElementById('prevMet').onclick = function(){
+    let lists = document.querySelectorAll('.item_certificateMet');
+    document.getElementById('listMet').prepend(lists[lists.length - 1]);
 }

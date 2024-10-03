@@ -102,7 +102,7 @@ function createCharts() {
         });
     };
 
-    createChart('htmlChart', 90);
+    createChart('htmlChart', 99);
     createChart('cssChart', 90);
     createChart('jsChart', 75);
     createChart('phpChart', 30);

@@ -527,6 +527,12 @@ footer {
 
 .container_certificado {
   padding-bottom: 10em;
+  text-align: center;
+}
+
+.titulo_certificado {
+  margin-top: 10em;
+  font-size: 1.1em;
 }
 
 .direction {
@@ -552,12 +558,12 @@ footer {
   cursor: pointer;
 }
 
-#prevCert > img, #nextCert > img {
+#prevCert > img, #nextCert > img, #prevCertMet > img, #nextCertMet > img {
   width: 10px;
   margin-top: 3px;
 }
 
-.item_certificate {
+.item_certificate, .item_certificateMet {
   border-radius: 15px;
   width: 400px;
   height: 300px;
@@ -565,7 +571,7 @@ footer {
   scroll-snap-align: start;
 }
 
-.item_certificate .certificado_HTML {
+.item_certificate .certificado_HTML, .item_certificateMet .certificado_HTML{
   display: block;
   margin: 50px auto 10px;
   width: 420px;
@@ -575,7 +581,7 @@ footer {
   box-shadow: 0 10px 15px #3a3a39;
 }
 
-#list {
+#list, #listMet {
   display: flex;
   width: max-content;
   gap: 3em;
