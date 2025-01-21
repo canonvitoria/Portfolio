@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadPage = async (page) => {
         try {
-            const response = await fetch(`pages/${page}.html`);
+            const response = await fetch(`Pages/${page}.html`);
             const content = await response.text();
             mainContent.innerHTML = content;
 
